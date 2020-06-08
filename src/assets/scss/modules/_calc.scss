@@ -36,6 +36,12 @@
     @media screen and (min-width: $desktop) {
       width: 47.2%;
     }
+
+    & + & {
+      @media screen and (max-width: $desktop - 1px) {
+        margin-top: 20px;
+      }
+    }
   }
 
   &__row {
