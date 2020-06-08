@@ -1,0 +1,40 @@
+.slider__list {
+  margin-top: vw($mobile, 20px);
+
+  @media screen and (min-width: $tablet) {
+    margin-top: rem(20);
+  }
+
+  &-item {
+    position: relative;
+    padding-left: vw($mobile, 22px);
+
+    @media screen and (min-width: $tablet) {
+      padding-left: rem(32);
+    }
+
+    & + li {
+      margin-top: vw($mobile, 20px);
+
+      @media screen and (min-width: $tablet) {
+        margin-top: rem(20);
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: vw($mobile, 2px);
+      left: 0;
+      width: vw($mobile, 12px);
+      height: vw($mobile, 12px);
+      border-radius: 50%;
+
+      @media screen and (min-width: $tablet) {
+        top: rem(2);
+        width: rem(12);
+        height: rem(12);
+      }
+    }
+  }
+}

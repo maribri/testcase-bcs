@@ -1,0 +1,7 @@
+.form__range {
+  margin-top: rem(34);
+
+  @media screen and (max-width: $desktop - 1px) {
+    display: none;
+  }
+}

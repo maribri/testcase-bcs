@@ -1,0 +1,13 @@
+.calc__btn-more {
+  display: block;
+  margin: vw($mobile, 30px) auto vw($mobile, 18px);
+  width: vw($mobile, 200px);
+
+  @media screen and (min-width: $tablet) {
+    margin: rem(30) 0 0;
+    width: rem(200);
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: rem(70);
+  }
+}

@@ -1,0 +1,10 @@
+.slider--active-2 {
+  &, .slider__tabs-item--active {
+    background-color: $pinkLight;
+  }
+  .slider__list-item, .slider__dots-item--active {
+    &:before {
+      background-color: $pink;
+    }
+  }
+}

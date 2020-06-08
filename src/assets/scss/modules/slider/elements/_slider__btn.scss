@@ -1,0 +1,13 @@
+.slider__btn {
+  display: block;
+  margin: vw($mobile, 292px) auto vw($mobile, 18px);
+  width: vw($mobile, 200px);
+
+  @media screen and (min-width: $tablet) {
+    margin: rem(52) 0 0;
+    width: rem(200);
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: rem(32);
+  }
+}

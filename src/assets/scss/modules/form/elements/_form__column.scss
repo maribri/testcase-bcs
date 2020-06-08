@@ -1,0 +1,14 @@
+.form__column {
+  @media screen and (min-width: $desktop) {
+    width: 47.2%;
+  }
+  @media screen and (min-width: $desktopMax) {
+    width: 44.3%;
+  }
+
+  & + & {
+    @media screen and (max-width: $desktop - 1px) {
+      margin-top: rem(20);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.slider__dots {
+  position: absolute;
+  bottom: vw($mobile, 24px);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    bottom: rem(28);
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
+  &-item {
+    padding: 0 vw($mobile, 6px);
+
+    @media screen and (min-width: $tablet) {
+      padding: 0 rem(6);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: vw($mobile, 8px);
+      height: vw($mobile, 8px);
+      border-radius: 50%;
+      background-color: $defaultText;
+
+      @media screen and (min-width: $tablet) {
+        width: rem(8);
+        height: rem(8);
+      }
+    }
+  }
+}

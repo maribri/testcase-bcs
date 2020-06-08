@@ -1,0 +1,61 @@
+.slider__item {
+  display: none;
+  padding-top: vw($mobile, 18px);
+  padding-bottom: vw($mobile, 40px);
+  background-repeat: no-repeat;
+  background-size: vw($mobile, 320px) auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: rem(-64);
+    padding-top: rem(80);
+    padding-bottom: rem(60);
+    background-position: bottom right;
+    background-size: rem(370) auto;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: rem(120);
+    padding-bottom: rem(40);
+    background-size: rem(452) auto;
+  }
+  @media screen and (min-width: $desktopMax) {
+    background-size: rem(588) auto;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &--slide1 {
+    background-image: url("../../../../images/slide1-320@2x.png");
+    background-position: bottom vw($mobile, 108px) center;
+
+    @media screen and (min-width: $tablet) {
+      background-image: url("../../../../images/slide1-768@2x.png");
+      background-position: bottom right;
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url("../../../../images/slide1-1024.png");
+      background-position: bottom right;
+    }
+    @media screen and (min-width: $desktopMax) {
+      background-image: url("../../../../images/slide1-1200.png");
+      background-position: bottom right rem(-64);
+    }
+  }
+
+  &--slide2 {
+    background-image: url("../../../../images/slide2-320@2x.png");
+    background-position: bottom vw($mobile, 108px) center;
+
+    @media screen and (min-width: $tablet) {
+      background-image: url("../../../../images/slide2-768@2x.png");
+      background-position: bottom right;
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url("../../../../images/slide2-1024.png");
+    }
+    @media screen and (min-width: $desktopMax) {
+      background-image: url("../../../../images/slide2-1200.png");
+    }
+  }
+}

@@ -5,7 +5,7 @@ import logoSmall from '../assets/images/logo-small.svg';
 function App() {
   return (
     <header className="header">
-      <div className="content-wrapper header-wrapper">
+      <div className="content-wrapper header__wrapper">
         <a href="/">
           <img className="header__logo header__logo--full" src={logo} alt="Название сайта"/>
           <img className="header__logo header__logo--small" src={logoSmall} alt="Название сайта"/>

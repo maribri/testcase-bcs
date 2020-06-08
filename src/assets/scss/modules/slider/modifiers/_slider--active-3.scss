@@ -1,0 +1,10 @@
+.slider--active-3 {
+  &, .slider__tabs-item--active {
+    background-color: $turquoiseLight;
+  }
+  .slider__list-item, .slider__dots-item--active {
+    &:before {
+      background-color: $turquoise;
+    }
+  }
+}

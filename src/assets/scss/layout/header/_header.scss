@@ -1,0 +1,22 @@
+.header {
+  padding-top: vw($mobile, 13px);
+  padding-bottom: vw($mobile, 22px);
+  background-color: $bluePrimary;
+  color: $white;
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    z-index: 1;
+    padding-top: rem(13);
+    padding-bottom: rem(13);
+    background-color: transparent;
+    color: $bluePrimary;
+  }
+}
+
+//elements
+@import "elements/header__wrapper";
+@import "elements/header__logo";
+@import "elements/header__link-account";
+@import "elements/header__phone";
+@import "elements/header__text";

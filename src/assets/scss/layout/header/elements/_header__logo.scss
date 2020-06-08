@@ -1,0 +1,20 @@
+.header__logo {
+  margin-left: vw($mobile, -4px);
+  width: vw($mobile, 30px);
+
+  &--small {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--full {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-left: 0;
+      width: auto;
+    }
+  }
+}

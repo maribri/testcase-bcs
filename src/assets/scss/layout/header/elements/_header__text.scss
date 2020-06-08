@@ -1,0 +1,7 @@
+.header__text {
+  margin-top: vw($mobile, 9px);
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

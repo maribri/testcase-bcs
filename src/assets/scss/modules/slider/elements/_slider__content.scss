@@ -1,0 +1,11 @@
+.slider__content {
+  @media screen and (min-width: $tablet) {
+    max-width: calc(100% - 300px);
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: calc(100% - 500px);
+  }
+  @media screen and (min-width: $desktopMax) {
+    max-width: calc(100% - 600px);
+  }
+}

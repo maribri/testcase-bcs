@@ -1,0 +1,10 @@
+.calc__title {
+  margin-bottom: vw($mobile, 20px);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: rem(15);
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: rem(24);
+  }
+}

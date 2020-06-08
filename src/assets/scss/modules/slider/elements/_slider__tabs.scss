@@ -1,0 +1,35 @@
+.slider__tabs {
+  display: none;
+  font-size: vw($mobile, 11px);
+  line-height: 1.45;
+
+  @media screen and (min-width: $tablet) {
+    font-size: rem(11);
+  }
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    bottom: rem(-60);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    text-align: center;
+    background-color: $grayLightest;
+
+    @media screen and (min-width: $desktop) {
+      padding: rem(15) 0;
+      width: rem(146);
+    }
+    @media screen and (min-width: $desktopMax) {
+      padding: rem(15) rem(17);
+      width: rem(180);
+    }
+
+    &:not(.active) {
+      cursor: pointer;
+    }
+  }
+}

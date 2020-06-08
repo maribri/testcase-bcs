@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  margin-bottom: vw($mobile, 38px);
+  color: $bluePrimary;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: rem(76);
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: rem(136);
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+//elements
+@import "elements/slider__title";
+@import "elements/slider__item";
+@import "elements/slider__content";
+@import "elements/slider__list";
+@import "elements/slider__btn";
+@import "elements/slider__nav-container";
+@import "elements/slider__dots";
+@import "elements/slider__tabs";
+
+//modifiers
+@import "modifiers/slider--active-1";
+@import "modifiers/slider--active-2";
+@import "modifiers/slider--active-3";

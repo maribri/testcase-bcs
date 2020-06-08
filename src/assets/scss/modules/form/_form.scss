@@ -1,0 +1,17 @@
+.form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktopMax) {
+    padding-right: rem(102);
+  }
+}
+
+//elements
+@import "elements/form__column";
+@import "elements/form__row";
+@import "elements/form__label";
+@import "elements/form__field";
+@import "elements/form__range";

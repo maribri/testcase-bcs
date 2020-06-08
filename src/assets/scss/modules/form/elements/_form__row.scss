@@ -1,0 +1,70 @@
+.form__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: vw($mobile, 10px) vw($mobile, 25px) vw($mobile, 10px) vw($mobile, 10px);
+  height: vw($mobile, 60px);
+  border: 1px solid $grayLight;
+
+  @media screen and (min-width: $tablet) {
+    padding: rem(10) rem(62) rem(10) rem(20);
+    height: rem(60);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: rem(34);
+  }
+
+  & + & {
+    margin-top: vw($mobile, 20px);
+
+    @media screen and (min-width: $tablet) {
+      margin-top: rem(20);
+    }
+  }
+
+  &--rub, &--usd {
+    &:after {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: vw($mobile, 8px);
+      top: 0;
+      bottom: 0;
+      font-size: vw($mobile, 18px);
+
+      @media screen and (min-width: $tablet) {
+        right: rem(40);
+        font-size: rem(24);
+      }
+    }
+  }
+  &--rub {
+    &:after {
+      content: "\20BD";
+    }
+  }
+  &--usd {
+    &:after {
+      content: "\0024";
+    }
+  }
+  &--result {
+    @media screen and (min-width: $desktop) {
+      border-width: 0 0 1px;
+      padding: 0 rem(24) 0 0;
+      align-items: flex-end;
+
+      &:after {
+        bottom: rem(4);
+        right: rem(1);
+        align-items: flex-end;
+      }
+    }
+  }
+  &--total {
+    &:after {
+      color: $blueLight;
+    }
+  }
+}

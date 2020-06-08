@@ -1,0 +1,14 @@
+.slider__title {
+  margin-bottom: vw($mobile, 20px);
+
+  @media screen and (max-width: $tablet - 1px) {
+    font-size: vw($mobile, 24px);
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: rem(20);
+    line-height: 1.11;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: rem(40);
+  }
+}
