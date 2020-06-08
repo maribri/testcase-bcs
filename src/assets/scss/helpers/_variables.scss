@@ -1,0 +1,41 @@
+/************** Fonts *************/
+
+$fontBase1: 'Geometria', Arial, Helvetica, sans-serif;
+$baseFontSize: 16px;
+
+/************** Breakpoints *************/
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktopMax: 1200px;
+
+$mobileWrapper: 280px;
+$tabletWrapper: 692px;
+$desktopWrapper: 924px;
+$desktopMaxWrapper: 1200px;
+
+$mobilePadding: 20px;
+$tabletPadding: 38px;
+$desktopPadding: 50px;
+$desktopMaxPadding: 50px;
+
+/************** Colors *************/
+
+$black: #000;
+$white: #fff;
+
+$defaultText: #333333;
+$gray: #d1d1d1;
+$grayDark: #686868;
+$grayLight: #e1e1e1;
+$grayLightest: #F7F7F7;
+$blue: #0073F1;
+$bluePrimary: #2B2B51;
+$blueLight: #2F80ED;
+$turquoise: #71D0BA;
+$turquoiseLight: #D9F4F2;
+$yellow: #F2C94C;
+$yellowLight: #fff8cc;
+$pink: #FF7777;
+$pinkLight: #FFE9E9;

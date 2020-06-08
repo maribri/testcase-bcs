@@ -1,0 +1,48 @@
+/************** Default mixins *************/
+
+// px to rem
+@function strip-units($pxval) {
+  @return $pxval / ($pxval * 0 + 1);
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $baseFontSize;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+// px to vw
+@function strip-units($pxval) {
+  @return $pxval / ($pxval * 0 + 1);
+}
+
+@function vw($base, $pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 100vw;
+}
+
+@mixin img-container(){
+  position: relative;
+  & img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}

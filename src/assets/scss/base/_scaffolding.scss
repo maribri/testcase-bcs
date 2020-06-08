@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+body, h1, h2, h3, h4, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  font-family: $fontBase1;
+  font-size: vw($mobile, 16px);
+  line-height: 1.25;
+  color: $defaultText;
+
+  @media screen and (min-width: $tablet) {
+    font-size: rem(16);
+  }
+}
+
+.content-wrapper {
+  max-width: rem(1300);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: vw($mobile, $mobilePadding);
+  padding-right: vw($mobile, $mobilePadding);
+
+  @media screen and (min-width: $tablet) {
+    padding-left: rem($tabletPadding);
+    padding-right: rem($tabletPadding);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: rem($desktopPadding);
+    padding-right: rem($desktopPadding);
+  }
+}
+
+.main {
+  padding-bottom: rem(50);
+}
+
+.section-title {
+  font-size: vw($mobile, 36px);
+  font-weight: normal;
+  line-height: 1.25;
+
+  @media screen and (min-width: $tablet) {
+    font-size: rem(36);
+  }
+}
+
+.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: vw($mobile, 25px);
+  border: 0;
+  padding: 0 vw($mobile, 12px);
+  height: vw($mobile, 50px);
+  line-height: vw($mobile, 50px);
+  background-color: $blue;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: vw($mobile, 10px);
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: $white;
+
+  @media screen and (min-width: $tablet) {
+    border-radius: rem(25);
+    padding: 0 rem(12);
+    height: rem(50);
+    line-height: rem(50);
+    font-size: rem(10);
+  }
+}
