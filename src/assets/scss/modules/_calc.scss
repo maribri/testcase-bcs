@@ -20,7 +20,7 @@
       width: rem(200);
     }
     @media screen and (min-width: $desktop) {
-      margin-top: rem(32);
+      margin-top: rem(70);
     }
   }
 }
@@ -31,15 +31,21 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  @media screen and (min-width: $desktopMax) {
+    padding-right: rem(102);
+  }
 
   &__column {
     @media screen and (min-width: $desktop) {
       width: 47.2%;
     }
+    @media screen and (min-width: $desktopMax) {
+      width: 44.3%;
+    }
 
     & + & {
       @media screen and (max-width: $desktop - 1px) {
-        margin-top: 20px;
+        margin-top: rem(20);
       }
     }
   }
@@ -56,6 +62,9 @@
     @media screen and (min-width: $tablet) {
       padding: rem(10) rem(62) rem(10) rem(20);
       height: rem(60);
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: rem(34);
     }
 
     & + & {
@@ -92,6 +101,19 @@
         content: "\0024";
       }
     }
+    &--result {
+      @media screen and (min-width: $desktop) {
+        border-width: 0 0 1px;
+        padding: 0 rem(24) 0 0;
+        align-items: flex-end;
+
+        &:after {
+          bottom: rem(4);
+          right: rem(1);
+          align-items: flex-end;
+        }
+      }
+    }
     &--total {
       &:after {
         color: $blueLight;
@@ -118,14 +140,37 @@
 
     @media screen and (min-width: $tablet) {
       font-size: rem(24);
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: rem(4);
     }
 
     &:focus {
       outline: none;
     }
+    &--fee {
+      @media screen and (min-width: $desktop) {
+        max-width: 41%;
+      }
+    }
     &--total {
       color: $blueLight;
       max-width: 63%;
+    }
+  }
+
+  &__range {
+    margin-top: rem(34);
+
+    @media screen and (max-width: $desktop - 1px) {
+      display: none;
     }
   }
 }
