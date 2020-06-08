@@ -62,7 +62,7 @@
 
       @media screen and (min-width: $tablet) {
         background-image: url("../../images/slide1-768@2x.png");
-        background-position: bottom right rem(38);
+        background-position: bottom right;
       }
       @media screen and (min-width: $desktop) {
         background-image: url("../../images/slide1-1024.png");
@@ -99,7 +99,7 @@
       max-width: calc(100% - 500px);
     }
     @media screen and (min-width: $desktopMax) {
-      max-width: calc(100% - 550px);
+      max-width: calc(100% - 600px);
     }
   }
 
