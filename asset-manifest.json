@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/testcase-bcs/static/css/main.2e2c960c.chunk.css",
-    "main.js": "/testcase-bcs/static/js/main.cd5aa948.chunk.js",
-    "main.js.map": "/testcase-bcs/static/js/main.cd5aa948.chunk.js.map",
+    "main.css": "/testcase-bcs/static/css/main.811cae2c.chunk.css",
+    "main.js": "/testcase-bcs/static/js/main.16222807.chunk.js",
+    "main.js.map": "/testcase-bcs/static/js/main.16222807.chunk.js.map",
     "runtime-main.js": "/testcase-bcs/static/js/runtime-main.1d21ef97.js",
     "runtime-main.js.map": "/testcase-bcs/static/js/runtime-main.1d21ef97.js.map",
-    "static/js/2.58ce9d14.chunk.js": "/testcase-bcs/static/js/2.58ce9d14.chunk.js",
-    "static/js/2.58ce9d14.chunk.js.map": "/testcase-bcs/static/js/2.58ce9d14.chunk.js.map",
+    "static/css/2.0d8209ce.chunk.css": "/testcase-bcs/static/css/2.0d8209ce.chunk.css",
+    "static/js/2.e5436f41.chunk.js": "/testcase-bcs/static/js/2.e5436f41.chunk.js",
+    "static/js/2.e5436f41.chunk.js.map": "/testcase-bcs/static/js/2.e5436f41.chunk.js.map",
     "index.html": "/testcase-bcs/index.html",
-    "precache-manifest.908402fefd793e59edf5533138ae033d.js": "/testcase-bcs/precache-manifest.908402fefd793e59edf5533138ae033d.js",
+    "precache-manifest.459951e8ca03eb4898139a4aa2b7ac26.js": "/testcase-bcs/precache-manifest.459951e8ca03eb4898139a4aa2b7ac26.js",
     "service-worker.js": "/testcase-bcs/service-worker.js",
-    "static/css/main.2e2c960c.chunk.css.map": "/testcase-bcs/static/css/main.2e2c960c.chunk.css.map",
-    "static/js/2.58ce9d14.chunk.js.LICENSE.txt": "/testcase-bcs/static/js/2.58ce9d14.chunk.js.LICENSE.txt",
+    "static/css/2.0d8209ce.chunk.css.map": "/testcase-bcs/static/css/2.0d8209ce.chunk.css.map",
+    "static/css/main.811cae2c.chunk.css.map": "/testcase-bcs/static/css/main.811cae2c.chunk.css.map",
+    "static/js/2.e5436f41.chunk.js.LICENSE.txt": "/testcase-bcs/static/js/2.e5436f41.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/testcase-bcs/static/media/slide2-768@2x.4f8e060d.png",
     "static/media/logo-small.svg": "/testcase-bcs/static/media/logo-small.8884a362.svg",
     "static/media/logo.svg": "/testcase-bcs/static/media/logo.91aa92d8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1d21ef97.js",
-    "static/js/2.58ce9d14.chunk.js",
-    "static/css/main.2e2c960c.chunk.css",
-    "static/js/main.cd5aa948.chunk.js"
+    "static/css/2.0d8209ce.chunk.css",
+    "static/js/2.e5436f41.chunk.js",
+    "static/css/main.811cae2c.chunk.css",
+    "static/js/main.16222807.chunk.js"
   ]
 }
